@@ -9,8 +9,8 @@
                     {{ pokemon.name }}
                 </h2>
 
-                <ul>
-                    <li *ngFor="let value of pokemon.status.types">
+                <ul class="type">
+                    <li *ngFor="let value of pokemon.status.types" [ngClass]="'type__'+value.type.name">
                         {{ value.type.name }}
                     </li>
                 </ul>
