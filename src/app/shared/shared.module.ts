@@ -6,23 +6,21 @@ import { RouterModule } from '@angular/router';
 import { PokeHeaderComponent } from './poke-header/poke-header.component';
 import { PokeSearchComponent } from './poke-search/poke-search.component';
 import { PokeListComponent } from './poke-list/poke-list.component';
-
-
+import { PokeCardComponent } from './poke-card/poke-card.component';
 
 @NgModule({
   declarations: [
     PokeHeaderComponent,
     PokeSearchComponent,
-    PokeListComponent
+    PokeListComponent,
+    PokeCardComponent,
   ],
-  imports: [
-    CommonModule,
-    RouterModule
-  ],
+  imports: [CommonModule, RouterModule],
   exports: [
     PokeHeaderComponent,
     PokeSearchComponent,
-    PokeListComponent
-  ]
+    PokeListComponent,
+    PokeCardComponent,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}
